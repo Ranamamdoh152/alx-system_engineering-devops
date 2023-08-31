@@ -1,2 +1,2 @@
 #!/bin/bash
-if [ $(stat -c %u $hello_absolute_path) = "guillaume" ]; then chown betty hello fi 
+sudo chown --from==guillaume -R betty hello 
